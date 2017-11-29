@@ -18,7 +18,7 @@ task.addTask = (task, call) => {
 }
 
 task.deleteTask = (id, call) =>  {
-    const command = "Delete from task where Id=?";;
+    const command = "Delete from task where Id=?";
     return q$(command,[id],call);
 }
 
