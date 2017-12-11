@@ -5,7 +5,7 @@ const config = {
     password: "",
     database: "demo",
 }
-const connection = mysql.createPool(config);
+const connection = mysql.createConnection(config);
 
 
 module.exports = connection;
